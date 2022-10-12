@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(167, 212, 254, 0.821), #ffffff00), url("https://images.unsplash.com/photo-1653332259373-b3512fd81ca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80") bottom no-repeat; 
+    background-size: cover;
+    /* border-radius: 0 0 10% 10%; */
+}
+
+h1 {
+    color: rgb(69, 25, 0);
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, #ffffff00, rgba(167, 212, 254, 0.821)), url("https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+}
+
+.news {
+    width: fit-content;
+    background-color: #e5e5e5;
+    padding: 20px 0 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+article a {
+    color: rgb(232, 100, 0);
+    text-decoration: none;
+}
+
+article a:hover {
+    color: rgb(109, 47, 0);
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+.news:nth-child(-n+2) h2::before {
+    content: "New!";
+    color: blue;
+}
+
+.news:nth-child(2n+2) {
+    background-color: #a8a8a8;
+}
+
+.article-meta {
+    color: rgb(111, 48, 0);
+    margin-bottom: 10px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+article img:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #c8c8c8;
+}
+
+footer .link {
+    margin-bottom: 20px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link > a {
+    color: rgb(0, 8, 160);
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.link > a p:hover {
+    color: red;
+    transform: scale(1.5);
+}
+
+.link > a p {
+    transition: .5s;
+}
+
+.copyright {
+    color: rgb(111, 48, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+
